@@ -1,0 +1,28 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+}
+
+.border {
+    border: 10px solid red;
+}
+
+.padding {
+    padding: 30px;
+}
+
+.margin {
+    margin: 50px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+/* *는 전체를 뜻한다 
+
+또한 css 시작할 때 이 두개의 값을 기본으로 주고 하는게 좋다!
+*/
+
+

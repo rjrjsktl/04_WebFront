@@ -1,0 +1,88 @@
+.area1 {
+    background-color: red;
+}
+.area2 {
+    background-color: orange;
+}
+.area3 {
+    background-color: yellow;
+}
+.area4 {
+    background-color: green;
+}
+.area5 {
+    background-color: blue;
+}
+
+.inline {
+    display: inline;
+    /* 요소의 형식을 inline 변경 */
+}
+
+.block {
+    display: block;
+    /* 요소의 형식을 block 변경 */
+    width: 150px;
+    height: 150px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+/* 상하 2분할*/
+#container-1 {
+    border: 3px solid black;
+    width: 350px;
+    height: 472px;
+}
+
+#container-1 > div:first-child {
+    background-color: orange;
+    /* height: 135px; */
+    height: 30%;
+}
+
+#container-1 > div:last-child {
+    background-color: blue;
+    height: 70%;
+}
+
+#container-2 {
+    border: 3px solid purple;
+    width: 300px;
+    height: 440px;
+}
+
+#container-2 > div:first-child {
+    background-color: red;
+    height: 15%;
+}
+
+/* nth-child() ()속에 번호 넣으면 그 숫자에 포함되는 div */
+#container-2 > div:nth-child(2) {  
+    background-color: orange;
+    height: 35%;
+}
+
+#container-2 > div:last-child {
+    background-color: yellow;
+    height: 50%;
+}
+
+.test {
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+}
+
+.none {
+    /* 요소는 존재하나 화면출력x */
+    display: none;
+}
+
+.hidden {
+    /* 화면에 투명한 형태 출력 */
+    visibility: hidden;
+}
+
