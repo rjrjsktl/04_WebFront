@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원 가입 양식</title>
+
+    <style>
+        .confirm {
+            background-color: green;
+
+        }
+
+        .error {
+            background-color: red;
+            color: white;
+        }
+
+        .none1 {
+            background-color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/pratice1.css">
+</head>
+
+<body>
+    <form action="main.html" method="Get" onsubmit="return validate();">
+        <fieldset>
+            <legend>회원 가입 양식</legend>
+
+            <table>
+                <tr>
+                    <td>아이디</td>
+                    <td><input type="text" id="inputId"></td>
+                    <td><button type="button">중복확인</button></td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td><input type="password" id="inputPw"></td>
+                    <td><span id="pwMessage"></span></td>
+                </tr>
+                <tr>
+                    <td>비밀번호확인</td>
+                    <td><input type="password" id="inputPwConfrim"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>이름</td>
+                    <td><input type="text" id="username"></td>
+                    <td><span id="ckname"></span></td>
+                </tr>
+                <tr>
+                    <td>성별</td>
+                    <td>
+                        <label for="gender">
+                            남<input type="radio" name="gender" value="남">
+                            여<input type="radio" name="gender" value="여">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>전화번호</td>
+                    <td><input type="number" id="usernmb"></td>
+                    <td><span id="cknmb"></span></td>
+                </tr>
+                <tr>
+                    <td>이메일</td>
+                    <td><input type="text" id="useremail"></td>
+                    <td><span id="ckemail"></span></td>
+                </tr>
+                <tr align="center">
+                    <td></td>
+                    <td><button>초기화</button>&nbsp;<button>회원가입</button></td>
+                </tr>
+            </table>
+
+
+
+
+
+
+
+            <script src="../js/pratice1.js"></script>
+
+        </fieldset>
+    </form>
+
+
+
+
+</body>
+
+</html>
