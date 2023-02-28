@@ -19,11 +19,22 @@ inputId.addEventListener("change", function() {
         this.style.backgroundColor = "red";
         this.style.color = "white";
     }
+})
+
+/* 비밀번호 확인 : 키보드가 올라올 때 */
+const inputPw = document.getElementById("inputPw");
+const inputPwConfirm = document.getElementById("inputPwConfirm");
+
+inputPwConfirm.addEventListener("keyup", function() { 
+
+    inputPwConfirm.value = "";
+
+    // 비밀번호입력해주세요 라는 경고창 출력
+    alert("비밀번호를 입력하세요.");
 
 
 
 })
-
 
 
 
